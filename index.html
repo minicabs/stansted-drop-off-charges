@@ -111,9 +111,69 @@ and rules can save time, money, and frustration. Stansted introduced its Express
     </section>
   </main>
 
-  <footer class="bg-gray-100 text-center py-6 mt-10">
-    <p class="text-gray-600"> 2025 Stansted Airport Drop-Off Charge</p>
-  </footer>
+  <footer class="bg-gray-900 text-gray-200">
+  <div class="max-w-7xl mx-auto px-6 py-10">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <!-- About / Branding -->
+      <div>
+        <a href="https://www.minicabs.co.uk/" class="inline-block text-2xl font-semibold text-white hover:opacity-90" aria-label="Minicabs Home">
+          Minicabs.co.uk
+        </a>
+        <p class="mt-3 text-sm text-gray-300 max-w-xs">
+          Reliable, licensed minicab service across London. Fixed fares, professional drivers and 24/7 airport transfers.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <nav aria-label="Service locations" class="sm:col-span-1 md:col-span-1">
+        <h3 class="text-white font-medium mb-3">Service Areas</h3>
+        <ul class="space-y-2 text-sm">
+          <li>
+            <a href="https://www.minicabs.co.uk/minicabs-stanmore" class="text-blue-400 hover:underline" title="Minicabs Stanmore">Minicabs Stanmore</a>
+          </li>
+          <li>
+            <a href="https://www.minicabs.co.uk/minicabs-southgate" class="text-blue-400 hover:underline" title="Minicabs Southgate">Minicabs Southgate</a>
+          </li>
+          <li>
+            <a href="https://www.minicabs.co.uk/minicabs-kenton" class="text-blue-400 hover:underline" title="Minicabs Kenton">Minicabs Kenton</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- More Links -->
+      <nav aria-label="More locations" class="sm:col-span-1 md:col-span-1">
+        <h3 class="text-white font-medium mb-3">More Locations</h3>
+        <ul class="space-y-2 text-sm">
+          <li>
+            <a href="https://www.minicabs.co.uk/minicabs-peckham" class="text-blue-400 hover:underline" title="Minicabs Peckham">Minicabs Peckham</a>
+          </li>
+          <li>
+            <a href="https://www.minicabs.co.uk/minicabs-cricklewood" class="text-blue-400 hover:underline" title="Minicabs Cricklewood">Minicabs Cricklewood</a>
+          </li>
+          <li>
+            <a href="https://www.minicabs.co.uk/minicabs-wood-green" class="text-blue-400 hover:underline" title="Minicabs Wood Green">Minicabs Wood Green</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="border-t border-gray-800 mt-8 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-gray-400">&copy; <span id="year"></span> Minicabs.co.uk. All rights reserved.</p>
+
+      <div class="flex items-center gap-4">
+        <a href="/terms" class="text-sm text-gray-400 hover:text-white">Terms</a>
+        <a href="/privacy" class="text-sm text-gray-400 hover:text-white">Privacy</a>
+        <a href="/contact" class="text-sm text-gray-400 hover:text-white">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Sets current year for copyright
+    (function(){ var y = new Date().getFullYear(); var el = document.getElementById('year'); if(el) el.textContent = y; })();
+  </script>
+</footer>
+
 
   <script>
     const menuBtn = document.getElementById('menu-btn');
